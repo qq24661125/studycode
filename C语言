@@ -1,0 +1,23 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+struct book
+{
+	char name[20];
+	short price;
+};
+int main()
+{
+	struct book b1 = { "C语言",99 };
+	printf("这本书的名字：%s\n价格：%d", b1.name, b1.price);//.配合结构体使用
+	{
+		char name[20];
+		short price;
+	};
+
+	//int a = 10;
+	//int* p = &a;//有一种变量是用来存储地址的叫指针变量-*
+	//*p = 20;//*解引用操作符
+	//printf("address a = %p", &a);
+	//printf("a = %d sizeof p = %d \np =%d", a, sizeof(p), p);
+	return 0;
+}
